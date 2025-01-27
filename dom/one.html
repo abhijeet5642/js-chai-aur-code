@@ -6,18 +6,26 @@
     <title>Dom</title>
 </head>>
 <body class="bg-black">
-    <div ></div>
-    <h1  id="title"  class ="heading"> dom learing on chai aur code</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, accusamus.
-    </p>
-    <ul>
-        <li>one </li>
-        <li>two</li>
-        <li>three</li>
-    </ul>
-    <ul></ul>
-    <ul></ul>
+    <div class="parent">
+        <div class="day">Monday </div>
+        <div class="day">tuesday </div>
+        <div class="day">Wednesday</div>
+        <div class="day">thursday</div>
 
-    
+    </div>
+
+   
 </body>
+<script>
+    const parent = document.querySelector('.parent')
+    console.log([parent]);
+    console.log(parent.children[2].innerText)
+     for(let i=0;i<parent.children.length;i++)
+{
+    console.log(parent.children[i].innerText)
+}  
+parent.children[2].style.color = 'orange'  
+
+</script>
+
 </html>
